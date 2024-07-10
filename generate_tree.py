@@ -260,7 +260,7 @@ def generate_description_compare(categories_group):
     for x in categories_group:
         subtracted_list = [y for y in categories_group if y != x]
         string = ', '.join(subtracted_list)
-        prompt = generate_prompt_compare(categories_group, string)
+        prompt = generate_prompt_compare(x, string)
     
         while(True):
             try:
